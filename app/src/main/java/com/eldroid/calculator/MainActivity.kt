@@ -90,13 +90,13 @@ class MainActivity : AppCompatActivity() {
 
             // Format number1 and number2 based on whether they are whole numbers or have decimals
             val formattedNumber1 = if (number1 % 1 == 0.0) {
-                number1.toInt().toString()
+                number1.toLong().toString()
             } else {
                 number1.toString()
             }
 
             val formattedNumber2 = if (number2 % 1 == 0.0) {
-                number2.toInt().toString()
+                number2.toLong().toString()
             } else {
                 number2.toString()
             }
@@ -106,7 +106,7 @@ class MainActivity : AppCompatActivity() {
 
             // Format the result based on whether it has decimals or not
             val resultText = if (result % 1 == 0.0) {
-                result.toInt().toString()
+                result.toLong().toString()
             } else {
                 result.toString()
             }

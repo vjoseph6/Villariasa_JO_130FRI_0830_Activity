@@ -22,6 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_above="@+id/tvResult"
             android:layout_alignParentEnd="true"
+            android:fontFamily="@font/regular_poppins"
             android:text=""
             android:textSize="14sp" />
 
@@ -31,8 +32,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
+            android:fontFamily="@font/semibold_poppins"
             android:textSize="24sp"
-            android:text="0"
+            android:text="@string/result"
             android:textColor="@color/black"
             android:padding="16dp" />
     </RelativeLayout>
@@ -49,6 +51,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/all_clear"
+            android:fontFamily="@font/bold_poppins"
             android:background="@drawable/button_selector_delete"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -60,6 +63,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/button_selector_delete"
             android:text="@string/delete"
+            android:fontFamily="@font/bold_poppins"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@id/btnAllClear"
             app:layout_constraintEnd_toStartOf="@id/btnModulo" />
@@ -68,8 +72,9 @@
             android:id="@+id/btnModulo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_selector_operations"
+            android:background="@drawable/button_selector_delete"
             android:text="@string/percentage"
+            android:fontFamily="@font/bold_poppins"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@id/btnDelete"
             app:layout_constraintEnd_toStartOf="@id/btnDivide" />
@@ -80,6 +85,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/button_selector_operations"
             android:text="@string/divide"
+            android:fontFamily="@font/bold_poppins"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@id/btnModulo"
             app:layout_constraintEnd_toEndOf="parent" />
@@ -90,6 +96,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/seven"
+            android:fontFamily="@font/bold_poppins"
             android:background="@drawable/button_selector"
             app:layout_constraintTop_toBottomOf="@id/btnAllClear"
             app:layout_constraintStart_toStartOf="parent"
@@ -100,6 +107,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/eight"
+            android:fontFamily="@font/bold_poppins"
             android:background="@drawable/button_selector"
             app:layout_constraintTop_toBottomOf="@id/btnDelete"
             app:layout_constraintStart_toEndOf="@id/btn7"
@@ -110,6 +118,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/nine"
+            android:fontFamily="@font/bold_poppins"
             android:background="@drawable/button_selector"
             app:layout_constraintTop_toBottomOf="@id/btnModulo"
             app:layout_constraintStart_toEndOf="@id/btn8"
@@ -119,6 +128,7 @@
             android:id="@+id/btnMultiply"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/bold_poppins"
             android:background="@drawable/button_selector_operations"
             android:text="@string/multiply"
             app:layout_constraintTop_toBottomOf="@id/btnDivide"
@@ -131,6 +141,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/four"
+            android:fontFamily="@font/bold_poppins"
             android:background="@drawable/button_selector"
             app:layout_constraintTop_toBottomOf="@id/btn7"
             app:layout_constraintStart_toStartOf="parent"
@@ -141,6 +152,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/five"
+            android:fontFamily="@font/bold_poppins"
             android:background="@drawable/button_selector"
             app:layout_constraintTop_toBottomOf="@id/btn8"
             app:layout_constraintStart_toEndOf="@id/btn4"
@@ -151,6 +163,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/six"
+            android:fontFamily="@font/bold_poppins"
             android:background="@drawable/button_selector"
             app:layout_constraintTop_toBottomOf="@id/btn9"
             app:layout_constraintStart_toEndOf="@id/btn5"
@@ -162,6 +175,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/button_selector_operations"
             android:text="@string/subtract"
+            android:fontFamily="@font/bold_poppins"
             app:layout_constraintTop_toBottomOf="@id/btnMultiply"
             app:layout_constraintStart_toEndOf="@id/btn6"
             app:layout_constraintEnd_toEndOf="parent" />
@@ -172,6 +186,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/one"
+            android:fontFamily="@font/bold_poppins"
             android:background="@drawable/button_selector"
             app:layout_constraintTop_toBottomOf="@id/btn4"
             app:layout_constraintStart_toStartOf="parent"
@@ -182,6 +197,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/two"
+            android:fontFamily="@font/bold_poppins"
             android:background="@drawable/button_selector"
             app:layout_constraintTop_toBottomOf="@id/btn5"
             app:layout_constraintStart_toEndOf="@id/btn1"
@@ -192,6 +208,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/three"
+            android:fontFamily="@font/bold_poppins"
             android:background="@drawable/button_selector"
             app:layout_constraintTop_toBottomOf="@id/btn6"
             app:layout_constraintStart_toEndOf="@id/btn2"
@@ -203,6 +220,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/button_selector_operations"
             android:text="@string/add"
+            android:fontFamily="@font/bold_poppins"
             app:layout_constraintTop_toBottomOf="@id/btnMinus"
             app:layout_constraintStart_toEndOf="@id/btn3"
             app:layout_constraintEnd_toEndOf="parent" />
@@ -213,9 +231,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/zero"
+            android:fontFamily="@font/bold_poppins"
             android:background="@drawable/button_selector"
             app:layout_constraintTop_toBottomOf="@id/btn1"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.5"
             app:layout_constraintEnd_toStartOf="@id/btnDot" />
 
         <Button
@@ -224,6 +244,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/button_selector"
             android:text="@string/decimal_point"
+            android:fontFamily="@font/bold_poppins"
             app:layout_constraintTop_toBottomOf="@id/btn2"
             app:layout_constraintStart_toEndOf="@id/btn0"
             app:layout_constraintEnd_toStartOf="@id/btnEquals" />
@@ -234,6 +255,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/button_selector_operations"
             android:text="@string/equals"
+            android:fontFamily="@font/bold_poppins"
             app:layout_constraintTop_toBottomOf="@id/btn3"
             app:layout_constraintStart_toEndOf="@id/btnDot"
             app:layout_constraintEnd_toEndOf="parent" />
