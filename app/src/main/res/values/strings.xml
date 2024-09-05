@@ -5,6 +5,7 @@
     <string name="multiply">\u00D7</string>
     <string name="divide">\u00F7</string>
     <string name="equals">\u003D</string>
+    <string name="percentage">\u0025</string>
     <string name="all_clear">AC</string>
     <string name="decimal_point">.</string>
     <string name="zero">0</string>
@@ -19,4 +20,5 @@
     <string name="nine">9</string>
     <string name="portraitText">Portrait</string>
     <string name="landscapeText">Landscape</string>
+    <string name="delete">DEL</string>
 </resources>

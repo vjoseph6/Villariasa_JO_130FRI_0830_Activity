@@ -59,14 +59,26 @@ class MainActivity : AppCompatActivity() {
 
         operatorButtons.forEach { (button, op) ->
             button.setOnClickListener {
-                operator = op
-                number1 = input.toDouble()
-                input = ""
+
+                // Ignore if input is empty (no number entered) or if an operator is already set
+                if (input.isEmpty()) {
+                    return@setOnClickListener // Don't apply operator if no number is input
+                }
+
+                if (input.isNotEmpty()) {
+                    operator = op
+                    number1 = input.toDouble()
+                    input = ""
+                }
+
             }
         }
 
         btnEquals.setOnClickListener {
+
             number2 = input.toDouble()
+
+            // Calculate result based on the operator
             val result = when (operator) {
                 "+" -> number1 + number2
                 "-" -> number1 - number2
@@ -76,18 +88,35 @@ class MainActivity : AppCompatActivity() {
                 else -> 0.0
             }
 
-            val equationText = "$number1 $operator $number2"
+            // Format number1 and number2 based on whether they are whole numbers or have decimals
+            val formattedNumber1 = if (number1 % 1 == 0.0) {
+                number1.toInt().toString()
+            } else {
+                number1.toString()
+            }
+
+            val formattedNumber2 = if (number2 % 1 == 0.0) {
+                number2.toInt().toString()
+            } else {
+                number2.toString()
+            }
+
+            // Display the previous operation as formatted (without decimals for whole numbers)
+            val equationText = "$formattedNumber1 $operator $formattedNumber2"
+
+            // Format the result based on whether it has decimals or not
             val resultText = if (result % 1 == 0.0) {
                 result.toInt().toString()
             } else {
                 result.toString()
             }
 
-
+            // Update the TextViews
             tvPreviousOperation.text = equationText
             tvResult.text = resultText
             input = resultText
         }
+
 
         btnDelete.setOnClickListener {
             if (input.isNotEmpty()) {
