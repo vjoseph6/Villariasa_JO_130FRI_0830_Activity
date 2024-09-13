@@ -75,7 +75,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnEquals.setOnClickListener {
-
             number2 = input.toDouble()
 
             // Calculate result based on the operator
@@ -92,24 +91,20 @@ class MainActivity : AppCompatActivity() {
             val formattedNumber1 = if (number1 % 1 == 0.0) {
                 number1.toLong().toString()
             } else {
-                number1.toString()
+                String.format("%.2f", number1) // Format to 2 decimal places
             }
 
             val formattedNumber2 = if (number2 % 1 == 0.0) {
                 number2.toLong().toString()
             } else {
-                number2.toString()
+                String.format("%.2f", number2) // Format to 2 decimal places
             }
 
             // Display the previous operation as formatted (without decimals for whole numbers)
             val equationText = "$formattedNumber1 $operator $formattedNumber2"
 
-            // Format the result based on whether it has decimals or not
-            val resultText = if (result % 1 == 0.0) {
-                result.toLong().toString()
-            } else {
-                result.toString()
-            }
+            // Format the result to 2 decimal places
+            val resultText = String.format("%.2f", result)
 
             // Update the TextViews
             tvPreviousOperation.text = equationText
