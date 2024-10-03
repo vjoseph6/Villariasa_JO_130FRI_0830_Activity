@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">News</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="content">Content</string>
+    <string name="title">News FM</string>
+
+    <string name="headline1">Donald Trump Gets Good News as Democrats See Voters Drop in 4 Swing States</string>
+    <string name="news1">In four highly contested swing states, former President Donald Trump, the Republican presidential nominee, may have an edge over Vice President Kamala Harris as voter registration for the GOP increased in all but one state, while the Democratic Party saw a significantly larger drop in registered voters since the last presidential election.</string>
+    <string name="headline2">Tony Stark Was a Villain</string>
+    <string name="news2">News that Robert Downey Jr. was cast as Doctor Doom in the Marvel Cinematic Universe sent shockwaves through the fandom. Not only was it the return of the actor who kickstarted the MCU, but he would be playing one of the greatest villains in all the comics.</string>
+    <string name="headline3">Typhoon Krathon – live: Four dead as slow-moving storm makes landfall in Taiwan</string>
+    <string name="news3">Residents in Taiwan were told to seek shelter as Typhoon Krathon made landfall in Taiwan, with the island fully shut for the second day. Krathon, a slow moving storm which has been lashing Taiwan since Monday, slammed into the major port city Kaohsiung as a much weaker Category 1 typhoon around midday.</string>
+</resources>
