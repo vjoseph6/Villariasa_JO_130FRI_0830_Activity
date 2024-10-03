@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/night"
+    android:padding="16dp">
+
+    <!-- Pokémon Image -->
+    <ImageView
+        android:id="@+id/pokemon_image"
+        android:layout_width="162dp"
+        android:layout_height="185dp"
+        android:background="@drawable/dialog_rounded_background"
+        android:src="@drawable/balbasur_pic" />
+
+    <!-- Pokémon Name -->
+    <TextView
+        android:id="@+id/pokemon_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/semibold_poppins"
+        android:text="Balbasur"
+        android:textSize="32sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <!-- Pokémon Types -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grass"
+            android:background="#FBBB12"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:fontFamily="@font/medium_poppins"
+            android:textColor="@color/black"
+            android:layout_marginTop="4dp" />
+
+        <!-- Pokémon Types -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Poison"
+            android:textAllCaps="false"
+            android:background="#FBBB12"
+            android:textSize="18sp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/medium_poppins"
+            android:textColor="@color/black"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+
+    <!-- Pokémon Stats -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hp_60"
+            android:textSize="16sp"
+            android:fontFamily="@font/semibold_poppins"
+            android:textColor="#FBBB12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/defense_63"
+            android:textSize="16sp"
+            android:fontFamily="@font/semibold_poppins"
+            android:textColor="#FBBB12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/attack_62"
+            android:textSize="16sp"
+            android:fontFamily="@font/semibold_poppins"
+            android:textColor="#FBBB12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/speed_60"
+            android:textSize="16sp"
+            android:fontFamily="@font/semibold_poppins"
+            android:textColor="#FBBB12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sp_attack_80"
+            android:textSize="16sp"
+            android:fontFamily="@font/semibold_poppins"
+            android:textColor="#FBBB12"  />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sp_def_80"
+            android:textSize="16sp"
+            android:fontFamily="@font/semibold_poppins"
+            android:textColor="#FBBB12" />
+    </LinearLayout>
+</LinearLayout>

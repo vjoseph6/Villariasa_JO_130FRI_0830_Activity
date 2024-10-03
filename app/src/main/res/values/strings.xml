@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Menu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="positive">Positive</string>
+    <string name="exit_negative">Negative</string>
+    <string name="navigate_first">Go back Home</string>
+    <string name="navigate_dialog">Dialog</string>
+    <string name="exit_app">Exit App</string>
+    <string name="more">More</string>
+    <string name="dialog">Dialog</string>
+    <string name="navigate">Navigate</string>
+    <string name="speed_60">Speed: 60</string>
+    <string name="sp_attack_80">Sp. Attack: 80</string>
+    <string name="sp_def_80">Sp. Def: 80</string>
+    <string name="attack_62">Attack: 62</string>
+    <string name="defense_63">Defense: 63</string>
+    <string name="hp_60">HP: 60</string>
+    <string name="confirmation">Do you want to navigate or exit? Click negative if you want to exit. And click Positive if you want to navigate.</string>
+    <string name="confirm_action">Confirm Action</string>
+</resources>

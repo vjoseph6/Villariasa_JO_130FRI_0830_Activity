@@ -1,0 +1,38 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Menu item to navigate to Fragment -->
+    <item
+        android:id="@+id/menu_first"
+        android:title="@string/navigate"
+        android:icon="@drawable/ic_first_fragment"
+        app:showAsAction="always" />
+
+    <!-- Menu item to open DialogFragment -->
+    <item
+        android:id="@+id/menu_dialog"
+        android:title="@string/dialog"
+        android:icon="@drawable/ic_dialogs"
+        app:showAsAction="ifRoom" />
+
+    <!-- Menu with sub-menu to exit the app -->
+    <item
+        android:id="@+id/menu_more"
+        android:title="@string/more"
+        android:icon="@drawable/ic_movie"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/menu_more_first"
+                android:title="@string/navigate_first"
+                android:icon="@drawable/ic_movie" />
+            <item
+                android:id="@+id/menu_more_dialog"
+                android:title="@string/navigate_dialog"
+                android:icon="@drawable/ic_dialog" />
+            <item
+                android:id="@+id/menu_exit"
+                android:title="@string/exit_app"
+                android:icon="@drawable/ic_exit_app" />
+        </menu>
+    </item>
+</menu>

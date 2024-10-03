@@ -1,0 +1,60 @@
+<!-- res/layout/dialog_delete_confirmation.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_rounded_background"
+    android:padding="20dp"
+    android:gravity="center">
+
+    <!-- Title for Delete Dialog -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_action"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bold_poppins"
+        android:layout_gravity="center" />
+
+    <!-- Confirmation Message -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/confirmation"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:layout_gravity="center" />
+
+    <!-- Buttons for Confirmation -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDeleteNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/positive"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="@font/semibold_poppins"
+            android:background="#50C7A9"
+            android:layout_marginEnd="10dp" /> <!-- Gray color from your color resources -->
+
+        <Button
+            android:id="@+id/btnDeleteYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exit_negative"
+            android:textAllCaps="false"
+            android:fontFamily="@font/semibold_poppins"
+            android:textColor="@android:color/white"
+            android:background="#6841F4" /> <!-- Red color for delete action -->
+    </LinearLayout>
+</LinearLayout>
