@@ -16,9 +16,12 @@ class MainActivity : AppCompatActivity() {
         // Reference to BottomNavigationView
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
 
-        // Load the HomeFragmentClient as the default fragment
+        // Load the ToDoListFragment as the default fragment
         if (savedInstanceState == null) {
-            loadFragment(HomeFragmentCalc())
+            // Load the ToDoListFragment instead of the HomeFragmentCalc
+            loadFragment(ToDoListFragment())
+            // Set the ToDoList tab as selected
+            bottomNavigationView.selectedItemId = R.id.toDoList
         }
 
         // Set the item selected listener
@@ -43,6 +46,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
 
     private fun loadFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction()

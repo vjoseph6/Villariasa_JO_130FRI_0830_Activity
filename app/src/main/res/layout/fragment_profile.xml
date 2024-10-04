@@ -1,18 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/night"
+    android:padding="16dp"
     tools:context=".Fragment.ProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Profile Client"
-        android:gravity="center"
-        android:textSize="30sp"
-        android:fontFamily="@font/regular_poppins"
-        android:textColor="@color/black"/>
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
 
-</FrameLayout>
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/imageViewProfile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/ic_profiles" />
+
+        <!-- Profile Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Profile"
+            android:fontFamily="@font/bold_poppins"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:paddingTop="8dp" />
+
+        <!-- EditText for First Name -->
+        <EditText
+            android:id="@+id/editTextFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:fontFamily="@font/regular_poppins"
+            android:padding="10dp"
+            android:background="@drawable/edit_text_background" />
+
+        <!-- EditText for Middle Name -->
+        <EditText
+            android:id="@+id/editTextMiddleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Middle Name"
+            android:fontFamily="@font/regular_poppins"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@drawable/edit_text_background" />
+
+        <!-- EditText for Last Name -->
+        <EditText
+            android:id="@+id/editTextLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:fontFamily="@font/regular_poppins"
+            android:background="@drawable/edit_text_background" />
+
+        <!-- TextView for Gender -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:fontFamily="@font/semibold_poppins"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:layout_marginTop="10dp" />
+
+        <!-- RadioGroup for Gender selection -->
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:fontFamily="@font/regular_poppins"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:fontFamily="@font/regular_poppins"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/radioOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:fontFamily="@font/regular_poppins"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <!-- Checkbox for Subscription -->
+        <CheckBox
+            android:id="@+id/checkBoxSubscribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subscribe to newsletter"
+            android:fontFamily="@font/regular_poppins"
+            android:textColor="@color/white" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:fontFamily="@font/semibold_poppins"
+            android:layout_marginTop="16dp"
+            android:background="@color/white" />
+    </LinearLayout>
+</ScrollView>

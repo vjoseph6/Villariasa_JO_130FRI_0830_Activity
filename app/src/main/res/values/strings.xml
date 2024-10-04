@@ -25,7 +25,7 @@
     <string name="nine">9</string>
     <string name="portraitText">Portrait</string>
     <string name="landscapeText">Landscape</string>
-    <string name="delete">DEL</string>
+    <string name="delete">Delete</string>
     <string name="result">0</string>
 
     <string name="app_names">To Do List</string>
