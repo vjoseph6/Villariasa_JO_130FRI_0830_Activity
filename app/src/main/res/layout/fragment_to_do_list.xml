@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/night"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".Fragment.ToDoListFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/italic_poppins"
+            android:text="@string/app_names"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+
+    <!-- ListView to display tasks -->
+    <ListView
+        android:id="@+id/listViewTasks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- EditText and Button at the bottom for adding tasks -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"> <!-- Adds a margin at the bottom -->
+
+        <EditText
+            android:id="@+id/editTextTask"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular_poppins"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:hint="@string/task"
+            android:maxLength="15"/>
+
+        <Button
+            android:id="@+id/buttonAddTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:background="@drawable/button_background"
+            android:text="@string/add"/>
+    </LinearLayout>
+
+</LinearLayout>

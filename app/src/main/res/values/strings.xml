@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">BottomNavigation</string>
+    <string name="calculator">Calculator</string>
+    <string name="to_do_list">To Do List</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add">\u002B</string>
+    <string name="subtract">\u2212</string>
+    <string name="multiply">\u00D7</string>
+    <string name="divide">\u00F7</string>
+    <string name="equals">\u003D</string>
+    <string name="percentage">\u0025</string>
+    <string name="all_clear">AC</string>
+    <string name="decimal_point">.</string>
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="portraitText">Portrait</string>
+    <string name="landscapeText">Landscape</string>
+    <string name="delete">DEL</string>
+    <string name="result">0</string>
+
+    <string name="app_names">To Do List</string>
+    <string name="task">New Task</string>
+    <string name="task_description">Task description</string>
+    <string name="edit">Edit</string>
+    <string name="choose_an_option">Choose an Option</string>
+    <string name="edit_task">Edit task</string>
+    <string name="save_task">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+</resources>
